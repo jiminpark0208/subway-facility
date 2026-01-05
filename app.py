@@ -8,7 +8,7 @@ from streamlit_folium import st_folium
 # 1. 페이지 설정
 st.set_page_config(page_title="SubwayFacility", layout="wide", page_icon="🚇")
 
-# 2. DB 연결 캐싱 (중요: 조회가 빨라지는 핵심)
+# 2. DB 연결 캐싱 (중요: 조회가 빨라지는 핵심임)
 @st.cache_resource
 def get_db_connection():
     return psycopg2.connect(
